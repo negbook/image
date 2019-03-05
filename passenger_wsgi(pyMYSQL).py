@@ -1,6 +1,8 @@
 import os
 import sys
 
+import pymysql
+pymysql.install_as_MySQLdb()
 
 sys.path.append(os.getcwd())
 os.environ['DJANGO_SETTINGS_MODULE'] = "main.settings"
